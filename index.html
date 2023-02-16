@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Voici mon TP correspondant à l'examen sur HTML">
+    <link rel="shortcut icon" href="./icons8-formulaire-100.png" type="image/x-icon">
+    <title>Exam_HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML&nbsp;dans&nbsp;sa&nbsp;globalité</h1>
+    </header>
+
+    <h2>Bonjour</h2>
+    <p>Je m'appelle <strong>Marie Lemire</strong> et j'ai <strong>37 ans</strong>. J'habite un petit village,
+        j'ai
+        un enfant de 12 ans et aussi un chien et deux chats. J'aime les <strong>jeux vidéo</strong>, je
+        <strong>collectionne les consoles anciennes</strong>, j'aime <strong>la nature</strong>, les
+        <strong>animaux</strong> et les <strong>animés</strong>.
+    </p>
+    <hr>
+    <main>
+        <article>
+            <h2>Mon&nbsp;parcours</h2>
+            <ul>
+                <li>Distributrice d'imprimés publicitaires,</li>
+                <li>Auxiliaire de vie scolaire,</li>
+                <li>Préparatrice de salade,</li>
+                <li>Hôtesse événementielle,</li>
+                <li>Croupière.</li>
+            </ul>
+        </article>
+        <hr>
+        <article>
+            <div>
+                <h2>Mes&nbsp;compétences&nbsp;en&nbsp;web&nbsp;:</h2>
+                <table border>
+                    <thead>
+                        <tr>
+                            <th>Technologie</th>
+                            <th>Débutant</th>
+                            <th>Moyen</th>
+                            <th>Bon</th>
+                            <th>Expert</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="./html.svg" alt="logo de HTML"></td>
+                            <td></td>
+                            <td></td>
+                            <td>X</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./css.svg" alt="logo de CSS"></td>
+                            <td></td>
+                            <td></td>
+                            <td>X</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./js.svg" alt="logo de Java Script"></td>
+                            <td>X</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./php.svg" alt="logo de PHP"></td>
+                            <td>X</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./sql.svg" alt="logo de SQL"></td>
+                            <td>X</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <article>
+            <h2>Me contacter</h2>
+            <p>Vous pouvez me contacter par mail :</p>
+            <address>
+                <a href="mailto:marie.lemire@hotmail.com" rel="nofollow"
+                    title="lien vers mon adresse mail">marie.lemire@hotmail.com</a>
+            </address>
+            <p>Ou au :</p>
+            <address>
+                <a href="tel:.33782849325" rel="nofollow" title="lien vers mon numéro de téléphone">0782849325</a>
+            </address>
+        </article>
+        <article>
+            <h3>Formulaire&nbsp;de&nbsp;contact&nbsp;:</h3>
+            <form action="#" method="post">
+                <div class="homme">
+                    <label for="homme">Homme &#9794;</label>
+                    <input type="radio" name="genre" id="homme" value="homme">
+                </div>
+                <div class="femme">
+                    <label for="femme">Femme &#9792;</label>
+                    <input type="radio" name="genre" id="femme" value="femme">
+                </div>
+                <div class="name">
+                    <label for="name">Nom & Prénom : </label>
+                    <input type="text" placeholder="ex : Didier Deschamps" name="name" id="name">
+                </div>
+                <div class="age">
+                    <label for="age">Age :
+                        <input type="number" placeholder="ex : 52" name="age" id="age"> ans
+                    </label>
+                </div>
+                <div class="email">
+                    <label for="mail">E-mail : </label>
+                    <input type="email" placeholder="ex : prenom@domain.com" name="mail" id="mail">
+                </div>
+                <div>
+                    <label for="choix">Sujet : </label>
+                    <select name="choix" id="choix">
+                        <option value="">Choisissez</option>
+                        <option value="complement">Informations complémentaires</option>
+                        <option value="Stage">Stage</option>
+                        <option value="emploi">Offre d'emploi</option>
+                    </select>
+                </div>
+                <div class="text">
+                    <label for="text">Votre message : </label>
+                    <p><textarea name="text" id="text" cols="30" rows="5"></textarea></p>
+                </div>
+                <div class="case">
+                    <input type="checkbox" name="case" id="case" value="confirm">
+                    <label for="case">En cochant cette case, j'accepte les conditions relatives à l'utilisation de mes
+                        données personnelles décrites dans les <a href="#"
+                            title="redirection vers les mentions légales">mentions légales.</a></label>
+                </div>
+                <div class="bouton">
+                    <input type="submit" value="Envoyer le message">
+                </div>
+            </form>
+        </article>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20784.766234287745!2d3.683272877638822!3d49.36926062779845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e9abdc5b56eca1%3A0xbe2a3a82355d099d!2sR%C3%A9villon%2C%2002160%20Les%20Septvallons!5e0!3m2!1sfr!2sfr!4v1676542726635!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <footer>
+        <p>Voici les information me concernant.</p>
+    </footer>
+
+</body>
+
+</html>
